@@ -67,16 +67,6 @@ img {
     color:lightslategray;
 }
 
-@media(max-width: 1000px) {
-    :root {
-        --ni-height: 4rem;
-        --ni-fs: 1.5rem;
-        --fs-h1: 2rem;
-        --fs-h2: 1.5rem;
-        --fs-h3: 1rem;
-        --fs-p: 0.75rem;
-    }
-}
 
 .nav-link#contact {
     flex-grow: 3;
@@ -92,6 +82,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     list-style: none;   
 }
 
@@ -187,11 +178,6 @@ img {
     margin-right: 2%;
     margin-left: 2%;
 }
-@media(max-width: 800px) {
-    .section-page__bio__education__list__item__icon {
-        display: none;
-    }
-}
 
 /* --------------------PROJECTS------------------ */
 
@@ -262,7 +248,7 @@ img {
 }
 
 #section-page__contact__list {
-   display: flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     list-style: none;
@@ -279,4 +265,34 @@ img {
     background-color: rgb(109, 100, 197);
     border-radius: 50%; 
     padding: 1%; 
+}
+
+@media(max-width: 1000px) {
+    :root {
+        --ni-height: 4rem;
+        --ni-fs: 1.5rem;
+        --fs-h1: 2rem;
+        --fs-h2: 1.5rem;
+        --fs-h3: 1rem;
+        --fs-p: 0.75rem;
+        --imgsize-projects: 25rem;
+        --imgsize-icon: 8rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .section-page__bio__education__list__item__icon {
+        display: none;
+    }
+}
+
+@media(max-width: 600px) {
+    :root {
+        --ni-height: 3rem;
+        --ni-fs: 1rem;
+        --fs-h1: 1.5rem;
+        --fs-h2: 1rem;
+        --fs-h3: 0.75rem;
+        --fs-p: 0.5rem;
+    }
 }
