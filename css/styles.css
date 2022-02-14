@@ -1,0 +1,276 @@
+:root {
+    font-family:  "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    --ni-height: 5rem;
+    --ni-fs: 2rem;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
+    --fs-p: 1.5rem;
+
+    --ff-nav: "Poppins", sans-serif;
+    --ff-h1: 'Playfair Display', sans-serif;
+    --ff-h2: 'Playfair Display', sans-serif;
+    --ff-h3: 'Playfair Display', sans-serif;
+
+    --imgsize-projects: 30rem;
+    --imgsize-icon: 10rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 10rem;
+}
+
+body {
+    margin: 0; 
+    max-width:100%;
+    max-height:100%;
+    background-color: whitesmoke;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    background-color:rgb(4, 1, 46);
+    min-height: var(--ni-height);
+    font-family: var(--ff-nav);
+}
+
+.nav-link {
+    font-size: var(--ni-fs);
+    height: var(--ni-height);
+    text-align: center;
+    flex: 1 1 auto;
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link:hover{
+    text-shadow: 0 0 0.1rem lightslategray, 0 0 0.1rem lightslategray;
+    color:lightslategray;
+}
+
+@media(max-width: 1000px) {
+    :root {
+        --ni-height: 4rem;
+        --ni-fs: 1.5rem;
+        --fs-h1: 2rem;
+        --fs-h2: 1.5rem;
+        --fs-h3: 1rem;
+    }
+}
+
+.nav-link#contact {
+    flex-grow: 3;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+/* --------------------------PAGE-----------------------*/
+
+.section-page {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+.section-page__h1 {
+    font-family: var(--ff-h1);
+    font-size: var(--fs-h1);
+}
+
+.section-page__h2 {
+    font-family: var(--ff-h2);
+    font-size: var(--fs-h2);
+}
+
+.section-page__h3 {
+    font-family: var(--ff-h3);
+    font-size: var(--fs-h3);
+}
+.section-page__aside {
+    display: inline-flex;
+}
+
+#section-page__home {
+    background-color: rgb(12,7,73);
+}
+
+#section-page__home__article {
+    flex-grow: 1;
+    color:rgb(235, 234, 245);
+    background: linear-gradient(90deg, rgb(12,7,73), rgb(32, 27, 88));
+    text-align: center;
+    align-self: stretch;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.section-page {
+    background-color: rgb(171, 165, 245);
+}
+
+
+/* --------------------ABOUT------------------------- */
+#section-page__bio {
+    color: black;
+}
+
+#section-page__bio__article {
+    text-align: center;
+    border-bottom: 0.1rem solid rgb(109, 100, 197);
+}
+
+#section-page__bio__article__p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: var(--fs-p);
+}
+
+#section-page__bio__education {
+    margin-bottom: 5rem;
+}
+
+#section-page__bio__education__h1 {
+    text-align: center;
+}
+
+#section-page__bio__education__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.section-page__bio__education__list__item__icon {
+    height: var(--imgsize-icon);
+    margin-right: 3%;
+}
+
+.section-page__bio__education__list__item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 50%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+@media(max-width: 800px) {
+    .section-page__bio__education__list__item__icon {
+        display: none;
+    }
+}
+
+/* --------------------PROJECTS------------------ */
+
+#section-page__projects__article {
+    width: 100%;
+}
+
+#section-page__projects__article__h1 {
+    text-align: center;
+}
+
+#section-page__projects {
+    background-color: rgb(109, 100, 197);
+}
+
+#nav-menu__projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.nav-menu__projects__item{
+    height: var(--imgsize-projects);
+    width: var(--imgsize-projects);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav-menu__projects__item:hover {
+    filter: brightness(0.5);
+}
+
+.nav-menu__projects__item:hover >  .section-page__projects__article__nav-menu__projects__h2 {
+    display: block;
+}
+
+
+.section-page__projects__article__nav-menu__projects__h2 {
+    margin: 0;
+    display: none;
+}
+
+#section-page__projects__article__nav-menu__projects__1 {
+    background-image: url(../img/projects/chess_game.png);
+}
+
+#section-page__projects__article__nav-menu__projects__2 {
+    background-image: url(../img/projects/midi.png);
+}
+
+
+
+/* -----------------------CONTACT-------------------------- */
+
+#section-page__contact__article {
+    text-align: center;
+}
+
+#section-page__contact__list {
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.section-page__contact__list_item {
+    width: 10%;
+    min-width: 5rem;
+    background-color:#fff;
+    border:1px solid rgb(109, 100, 197);  
+    background-color: rgb(109, 100, 197);
+    border-radius: 50%; 
+    padding: 1%; 
+}
