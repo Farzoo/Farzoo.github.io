@@ -53,7 +53,7 @@ img {
 .nav-link {
     font-size: var(--ni-fs);
     height: var(--ni-height);
-    text-align: center;
+    text-align: left;
     flex: 1 1 auto;
     text-decoration: none;
     color: whitesmoke;
@@ -74,6 +74,7 @@ img {
         --fs-h1: 2rem;
         --fs-h2: 1.5rem;
         --fs-h3: 1rem;
+        --fs-p: 0.75rem;
     }
 }
 
@@ -90,8 +91,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    list-style: none;
-    justify-content: center;
+    list-style: none;   
 }
 
 .section-page__h1 {
@@ -131,6 +131,10 @@ img {
     background-color: rgb(171, 165, 245);
 }
 
+.section-page__p {
+    font-size: var(--fs-p);
+}
+
 
 /* --------------------ABOUT------------------------- */
 #section-page__bio {
@@ -142,10 +146,9 @@ img {
     border-bottom: 0.1rem solid rgb(109, 100, 197);
 }
 
-#section-page__bio__article__p {
+.section-page__bio__article__p {
     margin-left: 10%;
     margin-right: 10%;
-    font-size: var(--fs-p);
 }
 
 #section-page__bio__education {
@@ -252,6 +255,7 @@ img {
 /* -----------------------CONTACT-------------------------- */
 
 #section-page__contact__article {
+    width: 100%;
     text-align: center;
 }
 
