@@ -53,7 +53,7 @@ img {
 .nav-link {
     font-size: var(--ni-fs);
     height: var(--ni-height);
-    text-align: left;
+    text-align: right;
     flex: 1 1 auto;
     text-decoration: none;
     color: whitesmoke;
@@ -81,6 +81,7 @@ img {
 .nav-link#contact {
     flex-grow: 3;
     justify-content: end;
+    -webkit-justify-content: end;
     padding-right: 5%;
 }
 
